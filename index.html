@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu| Front-end developer </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="My-logo" src="/Images/h logo.jpeg" alt="Himanshu Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fas fa-bars" id="menu-icon" onclick="openmenu()"></i>
+          <i class="fas fa-times" id="close-icon" onclick="closemenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Himanshu</span><br />from Jaipur</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="Images/profile-pic.jpeg" alt="Profile Picture" />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m Himanshu, a passionate and motivated Front-End Developer, 
+              currently pursuing a B.Tech in Computer Science at NIMS University, Jaipur..<br /><br />
+
+              I specialize in building responsive and user-friendly web interfaces using HTML, CSS, 
+              JavaScript, and React.js. I also have a foundational understanding of Python programming, 
+              along with knowledge of DBMS concepts such as database design and basic SQL operations..<br /><br />
+
+             I am gaining hands-on experience with AWS cloud services, including deploying and managing web applications, 
+             and I regularly practice basic Data Structures and Algorithms (DSA) to strengthen my problem-solving skills
+             and code efficiency..<br /><br />
+
+              Always eager to learn and grow, I aim to create impactful web solutions and continuously
+              enhance my skills in modern front-end and cloud technologies..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="section-title">
+        <h2 class="dom-Skill">My Skills</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skill-item">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <p>
+            Proficient in python programming with basic DSA knowledge. I write clean and
+            optimized code to build scalable solutions.
+          </p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>
+            ES6+, DOM manipulation, async programming, and modern frameworks
+            like React.
+          </p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-brain"></i>
+          <h3>AI & ML</h3>
+          <p>
+            I use Python to build ML models, clean data, and solve real problems
+            using Scikit-learn and TensorFlow.
+          </p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <p>
+            Component-based UI, hooks, context API, and modern frontend state
+            management.
+          </p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-aws"></i>
+          <h3>AWS</h3>
+          <p>
+           Worked with AWS EC2, S3, and IAM to deploy and manage secure web applications.
+           Hosted static websites using Amazon S3 and implemented basic monitoring with CloudWatch.
+           Gained hands-on experience with cloud deployment, security configuration, and scalability concepts.
+          </p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <h3>Databases</h3>
+          <p>
+            Worked with MongoDB, MySQL, NoSQL, and Firebase for data storage and
+            real-time updates.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <h2 class="sub-title">Education</h2>
+        <ul class="education-list">
+          <li>
+            <span>B.Tech CSE (2022–2026)</span><br />NIMS University, Jaipur
+          </li>
+          <li>
+            <span>12th (2020)</span><br />Guru Ghananand Inter College, Sultanganj, Mainpuri, Uttar Pradesh.
+          </li>
+          <li>
+            <span> 10th (2018)</span><br />P. L. S. H. S. School Ahirwa, Mainpuri, Uttar Pradesh.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects (Styled like Skills Section) -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="sub-title">My Projects</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <i class="fas fa-gamepad"></i>
+            <h3>Hangman Game</h3>
+            <p>
+             Developed a console-based Hangman game using Python.
+             Implemented game logic, loops, conditionals, and user input handling. 
+             Improved problem-solving and logical thinking skills.
+            </p>
+            <a href="https://github.com/himanshu56yad/CODEALPHA-py-HANGMAN" class="btn">View</a>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-comments"></i>
+            <h3>AI Chatbot</h3>
+            <p>
+              Intelligent AI chatbot built using Python and Flask,capable of real-time conversations through a clean and responsive UI.
+            </p>
+            <a href="https://github.com/himanshu56yad/CODEALPHA-py-Chatbot"class="btn">View</a>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cogs"></i>
+            <h3>Task Automation</h3>
+            <p>
+              Automated repetitive tasks using Python scripts for file handling,
+              data processing, Gmail handling, and system automation to improve efficiency and productivity..
+            </p>
+            <a href="https://github.com/himanshu56yad/CODEALPHA-py-TASK_Automation" class="btn">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+              <p>
+                <i class="fas fa-paper-plane"></i> yadavhk999@gmail.com
+              </p>
+              <p><i class="fas fa-phone-square-alt"></i> +91 8057542838</p>
+              <a href="https://www.linkedin.com/in/himanshu-yadav-198b19315/"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/himanshu56yad"
+                ><i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/yadav_himanshu_18/"
+                ><i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </div>
+            <a href="/Himanshu-Resume..pdf" download class="btn btn2">
+              <i class="fas fa-file-download"></i> Download CV
+            </a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required/>
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Himanshu. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      var menuIcon = document.getElementById("menu-icon");
+      var closeIcon = document.getElementById("close-icon");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

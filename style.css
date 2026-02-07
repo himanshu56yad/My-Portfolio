@@ -1,0 +1,441 @@
+ /* 🌐 GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #01524c;
+  color: #d0cfce;
+}
+
+/* 🔲 NAVBAR + SIDEMENU */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo {
+  width: 140px;
+  border-radius: 50px;
+  
+}
+
+.My-logo {
+  width: 60px;
+  background-color: #61b752;
+  border-radius: 50%;
+}
+
+#sidemenu {
+  right: 0;
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #e5e5e5ee;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #f2bb09;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .fa-bars,
+nav .fa-times {
+  color: #cecaca;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+/* 🏠 HEADER SECTION */
+#header {
+  width: 100%;
+  height: 100vh;
+  background: url('ani.png') center/cover no-repeat;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #e45f00;
+}
+
+/* 📦 CONTAINER */
+.container {
+  padding: 10px 6%;
+}
+
+/* 👨‍💼 ABOUT SECTION */
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col1, .about-col2,
+.contact-left, .contact-right {
+  flex-basis: 35%;
+}
+
+.about-col2 {
+  flex-basis: 60%;
+}
+
+.about-col1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #e45f00;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* 🔥 Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 90px 4rem 0;
+}
+
+.skill-item {
+  background: #070707;
+  padding: 4rem;
+  border-radius: 10px;
+  border: 2px solid #e45f00;
+  color: #e45f00;
+  transition: 0.3s;
+  margin-left: 30px;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: #e45f00a3 2px 2px 20px 5px;
+}
+
+.skill-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dom-Skill {
+  color: #e45f00;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 90px;
+}
+
+/* 🎓 Education + 💼 Experience (Styled like Skills) */
+.education-container,
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 90px 4rem 0;
+}
+
+.education-item{
+  background-color: #020202;
+  padding: 4rem;
+  border-radius: 10px;
+  border: 2px solid #e45f00;
+  color: #e45f00;
+  transition: 0.3s;
+  margin-left: 30px;
+}
+
+.education-item:hover{
+  transform: translateY(-10px);
+  box-shadow: #e45f00a3 2px 2px 20px 5px;
+}
+
+.education-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.education-list li {
+  background-color: #0a0a0a;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e45f00;
+  color: #e45f00;
+  transition: 0.175s;
+}
+
+.education-list li:hover{
+  transform: translateY(-5px);
+  box-shadow: #e45f00a3 2px 2px 15px 5px;
+  transition: 0.175s;
+}
+
+.education-list li span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #ff6a00;
+}
+
+/* 🧠 PROJECTS SECTION */
+#projects {
+  padding: 50px 0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work h3 {
+  color: #e45f00;
+  font-size: x-large;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #d100f6);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.layer h3 {
+  margin-bottom: 20px;
+}
+
+.layer a {
+  margin-top: 20px;
+  background: #da2828;
+  color: #000;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 📞 CONTACT SECTION */
+.contact-left p {
+  margin-top: 7px;
+}
+
+.contact-left p i {
+  color: #d0c7ca;
+  margin-right: 7px;
+  font-size: 25px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #f5f3f2;
+  margin-top: 15px;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  background: #f76a04;
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+
+/* 🔚 FOOTER SECTION */
+.copyright {
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+ /* 📄 CV Download & Submit Buttons */
+.cv-submit-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.btn2 {
+  display: inline-block;
+  background: #f76a04;
+  color: black;
+  padding: 14px 50px;
+  font-size: 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn2:hover {
+  box-shadow: 2px 2px 15px 5px #e45f00a3;
+  transform: translateY(-3px);
+}
+
+/* 🔗 GitHub Button */
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid #f76a04;
+  padding: 14px 50px;
+  background: #000000;
+  color:    #f76a04;
+  font-size: 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: #e45f00 2px 2px 20px 5px;
+  transform: translateY(-3px);
+}
+
+
+
